@@ -1,0 +1,122 @@
+# ==========================================
+# Dependencies
+# ==========================================
+node_modules/
+.pnp/
+.pnp.js
+
+# ==========================================
+# Next.js & TypeScript Build Outputs
+# ==========================================
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+.swc/
+.turbo/
+.cache/
+
+# ==========================================
+# Python & Virtual Environments
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+develop-eggs/
+eggs/
+.eggs/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# ==========================================
+# Jupyter Notebooks & ML Training Runs
+# ==========================================
+.ipynb_checkpoints/
+runs/
+ml/runs/
+services/ml-service/runs/
+wandb/
+
+# ==========================================
+# Model Weights & Checkpoints (Ultralytics / PyTorch / ONNX)
+# ==========================================
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.bin
+*.h5
+!services/ml-service/weights/README.md
+!services/ml-service/weights/.gitkeep
+
+# ==========================================
+# Datasets & Large Archives (Store in Cloud/Drive)
+# ==========================================
+ml/data/*
+!ml/data/.gitkeep
+*.tar
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# ==========================================
+# Dynamic Uploads (Local runtime storage)
+# ==========================================
+services/backend/uploads/*
+!services/backend/uploads/.gitkeep
+apps/web/public/uploads/*
+!apps/web/public/uploads/.gitkeep
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+!apps/web/.env.example
+!services/backend/.env.example
+
+# ==========================================
+# IDE & OS Specific Files
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==========================================
+# Logs
+# ==========================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*

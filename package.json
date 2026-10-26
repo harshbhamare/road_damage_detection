@@ -1,0 +1,15 @@
+{
+  "name": "road-damage-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm --workspace=services/backend run dev",
+    "dev:web": "npm --workspace=apps/web run dev",
+    "dev:ml": "services/ml-service/.venv/Scripts/python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --app-dir services/ml-service",
+    "lint:backend": "npm --workspace=services/backend run lint"
+  }
+}
